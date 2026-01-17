@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+:root {
+  --foreground: #0f172a;
+  --background: #ffffff;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --primary: #0284c7;
+  --primary-hover: #0369a1;
+  --secondary: #64748b;
+}
+
+/* Accessibility Mode Overrides */
+html.accessibility-mode {
+  --foreground: #000000;
+  --muted: #1f2937;
+  font-size: 18px;
+}
+
+html.accessibility-mode *:focus {
+  outline-width: 4px !important;
+  outline-offset: 2px !important;
+}
+
+html.accessibility-mode button:focus,
+html.accessibility-mode a:focus,
+html.accessibility-mode input:focus,
+html.accessibility-mode select:focus {
+  outline: 4px solid var(--primary) !important;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+/* Global Focus Styles */
+*:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--foreground);
+}
+
+/* Content prose styles */
+.prose h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.prose h3 {
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.prose h4 {
+  font-size: 1.125rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.prose p {
+  margin-bottom: 1rem;
+  color: var(--muted);
+}
+
+.prose ul, .prose ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+  color: var(--muted);
+}
+
+.prose strong {
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+/* Smooth transitions */
+a, button {
+  transition: all 0.2s ease;
+}
+
+/* Max content width utility */
+.max-w-content {
+  max-width: 1200px;
+}
