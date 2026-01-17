@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { teamMembers, featuredTeam } from "@/data/team";
+import ReactionBar from "@/components/ReactionBar";
 
 // Group team members by discipline
 const disciplines = ["Research", "Engineering", "Product", "Design"];
@@ -149,10 +150,8 @@ function TeamMemberCard({ member }: TeamMemberCardProps) {
         <p className="text-sm text-gray-500 leading-relaxed">
           {member.snippet}
         </p>
-        <div className="mt-4 pt-4 border-t border-gray-100 flex items-center gap-3">
-           {/* Social placeholders */}
-           <div className="w-5 h-5 rounded-full bg-gray-200"></div>
-           <div className="w-5 h-5 rounded-full bg-gray-200"></div>
+        <div className="mt-4 pt-4 border-t border-gray-100">
+           <ReactionBar itemId={`team-${member.name}`} />
         </div>
       </div>
     </div>
