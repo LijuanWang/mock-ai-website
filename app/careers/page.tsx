@@ -203,7 +203,7 @@ function JobCard({ job }: { job: Job }) {
   return (
     <Link
       href={`/careers/${job.id}`}
-      className="group block bg-white border border-gray-200 rounded-xl p-6 hover:border-sky-300 hover:shadow-md transition-all"
+      className="group block bg-white border border-gray-200 rounded-xl p-6 hover:border-sky-300 hover:shadow-md transition-all animate-fade-in-up"
     >
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div className="flex-1">

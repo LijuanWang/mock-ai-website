@@ -123,12 +123,12 @@ function ArticleCard({ article }: { article: NewsArticle }) {
   return (
     <Link
       href={`/news/${article.slug}`}
-      className="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col"
+      className="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col animate-fade-in-up"
     >
       {/* Image */}
       <div className="relative aspect-[16/9] overflow-hidden">
         <img 
-          src={`https://source.unsplash.com/random/800x600?tech,ai,future&sig=${hash}`} 
+          src={article.heroImage} 
           alt={article.title}
           className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
         />
@@ -140,7 +140,7 @@ function ArticleCard({ article }: { article: NewsArticle }) {
           <span className="inline-block px-3 py-1 text-xs font-semibold bg-sky-50 text-sky-700 rounded-full capitalize">
             {article.category}
           </span>
-          <span className="text-xs font-medium text-gray-400">
+          <span className="text-xs font-medium text-gray-500">
             {article.readingTime}
           </span>
         </div>
@@ -149,11 +149,11 @@ function ArticleCard({ article }: { article: NewsArticle }) {
           {article.title}
         </h2>
         
-        <p className="text-sm text-gray-500 line-clamp-3 mb-4 flex-1">
+        <p className="text-sm text-gray-600 line-clamp-3 mb-4 flex-1">
           {article.excerpt}
         </p>
         
-        <div className="text-xs font-medium text-gray-400 pt-4 border-t border-gray-100 w-full">
+        <div className="text-xs font-medium text-gray-500 pt-4 border-t border-gray-100 w-full">
           {article.date}
         </div>
       </div>

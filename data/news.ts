@@ -17,7 +17,7 @@ export const newsArticles: NewsArticle[] = [
     readingTime: "5 min read",
     date: "January 15, 2026",
     excerpt: "Today we're announcing our most capable and efficient language model yet, designed to understand context with unprecedented accuracy.",
-    heroImage: "/images/placeholder-1.jpg",
+    heroImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&w=1200&q=80",
     content: `
 ## A New Era of Language Understanding
 
@@ -48,7 +48,7 @@ We're rolling out access to partners and developers starting next month, with ge
     readingTime: "3 min read",
     date: "January 12, 2026",
     excerpt: "A new initiative connecting our research teams with leading academic institutions worldwide to advance responsible AI development.",
-    heroImage: "/images/placeholder-2.jpg",
+    heroImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&w=1200&q=80",
     content: `
 ## Expanding Academic Collaboration
 
@@ -83,7 +83,7 @@ MAI Super Intelligence will provide $50 million in research grants over five yea
     readingTime: "7 min read",
     date: "January 10, 2026",
     excerpt: "New research shows that AI-assisted coding tools are fundamentally changing how developers work, with surprising benefits beyond code completion.",
-    heroImage: "/images/placeholder-3.jpg",
+    heroImage: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&w=1200&q=80",
     content: `
 ## The Evolution of Developer Tools
 
@@ -123,7 +123,7 @@ We're continuing to invest in making Copilot smarter, more context-aware, and be
     readingTime: "8 min read",
     date: "January 8, 2026",
     excerpt: "Outlining our comprehensive approach to ensuring AI systems are safe, beneficial, and aligned with human values throughout their development.",
-    heroImage: "/images/placeholder-4.jpg",
+    heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&w=1200&q=80",
     content: `
 ## Our Commitment to Safe AI Development
 
@@ -171,7 +171,7 @@ We believe AI safety is a shared responsibility. We're opening several research 
     readingTime: "4 min read",
     date: "January 5, 2026",
     excerpt: "Introducing a suite of AI-powered tools designed specifically for small and medium businesses, with simple pricing and no technical expertise required.",
-    heroImage: "/images/placeholder-5.jpg",
+    heroImage: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&w=1200&q=80",
     content: `
 ## AI for Everyone
 
@@ -213,7 +213,7 @@ Join the thousands of businesses already transforming with AI.
     readingTime: "6 min read",
     date: "January 3, 2026",
     excerpt: "Our research team shares insights into how multimodal AI systems process and understand information across text, images, and audio.",
-    heroImage: "/images/placeholder-6.jpg",
+    heroImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&w=1200&q=80",
     content: `
 ## The Future is Multimodal
 
