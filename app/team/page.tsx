@@ -8,13 +8,22 @@ export default function TeamPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-purple-50 to-white py-16 lg:py-24">
-        <div className="max-w-content mx-auto px-6 lg:px-8">
+      <section className="relative py-24 lg:py-32 overflow-hidden bg-gray-900">
+        <div className="absolute inset-0">
+          <img 
+            src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
+            alt="Team meeting" 
+            className="w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-gray-900 via-gray-900/80 to-transparent" />
+        </div>
+
+        <div className="max-w-content mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900">
+            <h1 className="text-4xl sm:text-5xl font-bold text-white">
               Our Team
             </h1>
-            <p className="mt-6 text-xl text-gray-600 leading-relaxed">
+            <p className="mt-6 text-xl text-gray-300 leading-relaxed">
               A global network of builders, researchers, and visionaries working 
               together to shape the future of AI. United by curiosity, driven by 
               responsibility, and committed to making technology that benefits everyone.
@@ -129,11 +138,11 @@ function TeamMemberCard({ member }: TeamMemberCardProps) {
   const hash = member.name.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
   
   return (
-    <div className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden transform hover:-translate-y-1">
+    <div className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden transform hover:-translate-y-1 animate-fade-in-up">
       {/* Portrait */}
       <div className="aspect-[4/5] relative overflow-hidden bg-gray-100">
         <img 
-          src={`https://source.unsplash.com/random/400x500?portrait,professional&sig=${hash}`} 
+          src={member.portrait} 
           alt={member.name}
           className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
         />

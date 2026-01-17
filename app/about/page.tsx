@@ -54,8 +54,18 @@ export default function AboutPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-sky-50 to-white py-16 lg:py-24">
-        <div className="max-w-content mx-auto px-6 lg:px-8">
+      <section className="relative py-24 lg:py-32 overflow-hidden">
+         {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
+            alt="About us background" 
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/80 to-white" />
+        </div>
+
+        <div className="max-w-content mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900">
               About MAI Super Intelligence
@@ -73,7 +83,7 @@ export default function AboutPage() {
       <section className="bg-white py-16 lg:py-24">
         <div className="max-w-content mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="animate-fade-in-up">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 font-display">Our Mission</h2>
               <p className="text-lg text-gray-600 mb-4 leading-relaxed">
                 At MAI Super Intelligence, we believe the most transformative technology in human 
@@ -91,7 +101,7 @@ export default function AboutPage() {
                 we&apos;re helping to create.
               </p>
             </div>
-            <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-500">
+            <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-500 animate-scale-in">
                <img 
                  src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
                  alt="Team collaboration" 

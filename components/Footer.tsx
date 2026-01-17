@@ -24,7 +24,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
           {/* Brand & Description */}
           <div className="max-w-sm">
-            <Link href="/" className="text-xl font-bold text-gray-900">
+            <Link href="/" className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-indigo-600">
               MAI Super Intelligence
             </Link>
             <p className="mt-3 text-sm text-gray-500">

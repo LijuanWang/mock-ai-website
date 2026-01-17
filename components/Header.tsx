@@ -34,13 +34,13 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
+    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 transition-all duration-300 animate-fade-in-down">
       <div className="max-w-content mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Brand */}
           <Link 
             href="/" 
-            className="text-xl font-bold text-gray-900 hover:text-sky-600"
+            className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-600 to-indigo-600 hover:to-sky-500 transition-colors"
           >
             MAI Super Intelligence
           </Link>
